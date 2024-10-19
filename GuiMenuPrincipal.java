@@ -49,7 +49,17 @@ public class GuiMenuPrincipal extends JFrame{
 				
 			}
 		});
+			miBotao.addActionListener((ActionListener) new ActionListener() {
+				public void actionPerformed(ActionEvent e) {
+					GuiBotao botao = new GuiBotao();
+					contentPane.removeAll();
+					contentPane.add(botao);
+					contentPane.validate();
+					
+				}
+			});
 	}
+	
 	
 	public static void abrir() {
 		GuiMenuPrincipal frame = new GuiMenuPrincipal();
